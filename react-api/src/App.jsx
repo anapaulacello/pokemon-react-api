@@ -55,18 +55,20 @@ function App() {
       </div>
       <div className="DisplaySection">
         {!pokemonChosen ? (
-          <h1> Please choose a Pokémon </h1>
+          <h1 className="beige_result"> Please choose a Pokémon </h1>
         ) : (
           <>
-            <h1>{pokemon.name}</h1>
-            <img src={pokemon.image} alt={pokemon.name} />
-            <h3>Number: #{pokemon.number}</h3>
-            <h3>Species: {pokemon.species}</h3>
-            <h3>Type: {pokemon.type}</h3>
-            <h4>Hp: {pokemon.hp}</h4>
-            <h4>Attack: {pokemon.attack}</h4>
-            <h4>Defense: {pokemon.defense}</h4>
-            <h4>Speed: {pokemon.speed}</h4>
+            <h1 className="beige_result">{pokemon.name}</h1>
+            <img className="pokemon_img" src={pokemon.image} alt={pokemon.name} />
+            <div className="description">
+              <h4 className="gray_result">Number: <h4 className="red_result">#{pokemon.number}</h4> </h4>
+              <h4 className="gray_result">Species:{pokemon.species}</h4>
+              <h4 className="gray_result">Type: {pokemon.type}</h4>
+              <h4 className="gray_result">Hp:<h4 className="red_result">{pokemon.hp}</h4> </h4>
+              <h4 className="gray_result">Attack: <h4 className="red_result">{pokemon.attack}</h4></h4>
+              <h4 className="gray_result">Speed:<h4 className="red_result">{pokemon.speed}</h4> </h4>
+            </div>
+
           </>
           
         )}

@@ -1,19 +1,22 @@
-body {
+*{
   margin: 0;
   padding: 0;
 }
 
 .App {
+    
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: Calibri;
   font-size: 24px;
   background-color: #6ea4bb;
+  min-height: 100vh;
 }
 
 .TitleSection {
-  
+  padding-top: 40px;
   width: 100%;
   height: 300px;
   display: flex;
@@ -45,4 +48,34 @@ body {
 
 .TitleSection button:hover {
   cursor: pointer;
+  min-height: 0;
+}
+
+.DisplaySection{
+    margin-bottom: 40px;
+    background-color: #464646;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width:400px;
+}
+
+.beige_result{
+    color: #f0dba5;
+}
+.gray_result{
+    color: #e7e7e6;
+}
+
+.pokemon_img{
+    height: 170px;
+}
+h4{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.red_result{
+    color: #c04c4b;
 }
